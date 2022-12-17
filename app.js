@@ -1,3 +1,7 @@
+const createPlayer = (name, marker) => {
+    return (name, marker)
+}
+
 const gameGrid = document.getElementById('game-grid')
 let blocks = document.querySelectorAll('.block')
 let player = 1;
