@@ -24,6 +24,10 @@ h1{
     font-size: 4rem;
 }
 
+#display-player{
+    font-weight: 600;
+}
+
 .game-grid{
     margin: 0 auto;
     display: grid;

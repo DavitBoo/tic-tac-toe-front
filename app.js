@@ -1,7 +1,7 @@
 const gameGrid = document.getElementById('game-grid')
 let blocks = document.querySelectorAll('.block')
 let player = 1;
-
+let displayPlayer = document.getElementById('display-player')
 
 const Gameboard = {
 
@@ -15,32 +15,36 @@ blocks.forEach(element => {
     })
 })
 
-
 function upadateState(index){
     let moveType
     if(player===1) moveType = 'O'
     else moveType = 'X'
 
-    arrMoves[index] = moveType
-    gameGrid.innerHTML = arrMoves.reduce((acc, elem, i)  => {
-        acc += `<div data-block="${i}" class="block ${ elem==='X' ? 'x' : (elem==='O' ? 'o' : '') }"><div>${elem}</div></div>`
-        return acc
-    }, ``)
+    if(arrMoves[index]===''){
+        arrMoves[index] = moveType
+    
 
-    blocks = document.querySelectorAll('.block')
+        gameGrid.innerHTML = arrMoves.reduce((acc, elem, i)  => {
+            acc += `<div data-block="${i}" class="block ${ elem==='X' ? 'x' : (elem==='O' ? 'o' : '') }"><div>${elem}</div></div>`
+            return acc
+        }, ``)
 
-    blocks.forEach(element => {
-        element.addEventListener('click', () => {
-            upadateState(element.dataset.block);
+        blocks = document.querySelectorAll('.block')
+
+        blocks.forEach(element => {
+            element.addEventListener('click', () => {
+                upadateState(element.dataset.block);
+            })
         })
-    })
 
-    if(player === 1){
-        player=2;
-    }else{
-        player=1;
+        if(player === 1){
+            player=2;
+        }else{
+            player=1;
+        }
+
+        displayPlayer.innerHTML = 'Player ' + player
     }
-
 }
 
 // players objects      ---> factory ?
