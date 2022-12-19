@@ -11,22 +11,26 @@
     <div class="overlay"></div>
     <div class="overoverlay">
         <p class="asking-names">Write players names below</p>
-        <div class="form">
-            <img class="icon" id="real-1" src="img/account-outline.png" alt="">
-            <img class="icon" id="cpu-1" src="img/memory.png" alt="">
-            <div class="d-flex field">
-                <label for="">Player O</label>
-                <input id="input-p1" type="" name="" value="">
+        <div class="form d-grid">
+            <div class="first-player">
+                <img class="icon" id="real-1" src="img/account-outline.png" alt="">
+                <img class="icon" id="cpu-1" src="img/memory.png" alt="">
+                <div class="d-flex field">
+                    <label for="">Player O</label>
+                    <input id="input-p1" type="" name="" value="">
+                </div>
             </div>
             <p class="vs">VS</p>
-            <img class="icon" id="real-2" src="img/account-outline.png" alt="">
-            <img class="icon" id="cpu-2" src="img/memory.png" alt="">
-            <div class="d-flex field">
-                <label for="">Player X</label>
-                <input id="input-p2" type="" name="" value="">
-            </div> 
-            <p class="start-game hide">GO!</p> 
+            <div class="second-player">
+                <img class="icon" id="real-2" src="img/account-outline.png" alt="">
+                <img class="icon" id="cpu-2" src="img/memory.png" alt="">
+                <div class="d-flex field">
+                    <label for="">Player X</label>
+                    <input id="input-p2" type="" name="" value="">
+                </div>
+            </div>
         </div>
+        <p class="start-game hide">GO!</p> 
     </div>
     <h1>Tic-tac-toe</h1>
     <p><span id="display-player"></span></p>
