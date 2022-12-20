@@ -17,7 +17,7 @@
                 <img class="icon" id="cpu-1" src="img/memory.png" alt="">
                 <div class="d-flex field">
                     <label for="">Player O</label>
-                    <input id="input-p1" type="" name="" value="">
+                    <input placeholder="Name player 1" id="input-p1" type="" name="" value="">
                 </div>
             </div>
             <p class="vs">VS</p>
@@ -26,7 +26,7 @@
                 <img class="icon" id="cpu-2" src="img/memory.png" alt="">
                 <div class="d-flex field">
                     <label for="">Player X</label>
-                    <input id="input-p2" type="" name="" value="">
+                    <input placeholder="Name player 2" id="input-p2" type="" name="" value="">
                 </div>
             </div>
         </div>
@@ -34,16 +34,18 @@
     </div>
     <h1>Tic-tac-toe</h1>
     <p><span id="display-player"></span></p>
-    <div class="game-grid" id="game-grid">
-        <div data-block="0" class="block"><div></div></div>
-        <div data-block="1" class="block"><div></div></div>
-        <div data-block="2" class="block"><div></div></div>
-        <div data-block="3" class="block"><div></div></div>
-        <div data-block="4" class="block"><div></div></div>
-        <div data-block="5" class="block"><div></div></div>
-        <div data-block="6" class="block"><div></div></div>
-        <div data-block="7" class="block"><div></div></div>
-        <div data-block="8" class="block"><div></div></div>
+    <div class="boardgame">
+        <div class="game-grid" id="game-grid">
+            <div data-block="0" class="block"><div></div></div>
+            <div data-block="1" class="block"><div></div></div>
+            <div data-block="2" class="block"><div></div></div>
+            <div data-block="3" class="block"><div></div></div>
+            <div data-block="4" class="block"><div></div></div>
+            <div data-block="5" class="block"><div></div></div>
+            <div data-block="6" class="block"><div></div></div>
+            <div data-block="7" class="block"><div></div></div>
+            <div data-block="8" class="block"><div></div></div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

@@ -17,7 +17,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   
 }
 
 h1{
@@ -36,19 +35,20 @@ p{
     font-size: 2.5rem;
 }
 
+
+
 .game-grid{
-    margin: 0 auto;
+    margin: 20px auto;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 150px);
-    gap: 10px;
+    grid-template-rows: repeat(3, 30%);
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 1rem;
     background-color: #fff;
-    height: 490px;
-    max-width: 100%;
-    width: 490px;
-    padding: 0;
+    height: 300px;
+    width: 300px;
+    padding: 0.5rem;
     border-radius: 8px;
 }
 
@@ -75,7 +75,7 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     display: flex;
-    font-size: 8rem;
+    font-size: 4.8rem;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -107,7 +107,7 @@ p{
 .asking-names, .start-game{
     color: #fff;
     font-size: 4rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -142,26 +142,31 @@ p{
 
 .d-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 33%);
     margin: 0 auto;
 }
 
 .form{
-   
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 input, label{
     max-width: 400px;
     color: #fff;
     text-align: center;
+    margin-top: 1rem;
 }
 
 input{
     background: none;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
     outline: none;
+    margin-top: 2rem;
+}
+
+input:focus{
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .vs{
